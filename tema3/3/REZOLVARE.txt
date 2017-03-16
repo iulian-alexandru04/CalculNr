@@ -1,0 +1,4 @@
+punctul a: pba(A,b), unde A si b sunt matricea si vectorul respective
+punctul b: pbb(A), unde A este matricea respectiva
+punctul c: pbc(A,b), unde A si b sunt matricea si vectorul respective
+punctul d: pbd(A,b), unde A si b sunt matricea si vectorul respective
