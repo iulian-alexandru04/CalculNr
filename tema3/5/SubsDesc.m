@@ -3,15 +3,11 @@ function [ x ] = SubsDesc( A,b )
 %   Detailed explanation goes here
 s = size(A);
 n=s(1);
-k=n-1;
+k=n;
 x = ones(k,1);
-x(n)=b(n)/A(n,n);
-while 1 == 1
+while k > 0
     x(k)=(b(k)-sum(x(k+1:n).*A(k,k+1:n)'))/A(k,k);
     k = k-1;
-    if k == 0
-        break
-    endif
 end
 end
 
