@@ -1,4 +1,4 @@
-function [ x ] = MetJacobiDDL( A,b,e,w )
+function [ x,k] = MetJacobiDDL( A,b,e,w )
     n = size(A,1);
     for i=1:n
        if 2*abs(A(i,i)) <= sum(A(i,:))
