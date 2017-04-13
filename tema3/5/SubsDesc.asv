@@ -1,0 +1,16 @@
+function [ x ] = SubsDesc( A,b )
+%UNTITLED11 Summary of this function goes here
+%   Detailed explanation goes here
+s = size(A);
+k = s(1);
+n=s(1);
+x = ones(k,1);
+while 1
+    x(k) = (b(k)-sum(x(k:s(1))).*A(k,k:n)/A(k,k);
+    k = k-1;
+    if k == 0
+        break
+    end
+end
+end
+

@@ -1,0 +1,2 @@
+punctul a: norma2mat(A), unde A este matricea respectiva
+punctul b: pb(A), unde A este matricea respectiva
