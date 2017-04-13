@@ -1,3 +1,4 @@
+%Gauss.m
 function [ xnew,nr ] = Gauss( A,b,e,p )
 I=eye(size(A));
 D = I.*A;

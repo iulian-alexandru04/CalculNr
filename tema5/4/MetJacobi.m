@@ -1,3 +1,4 @@
+%MetJacobi.m
 function [ xnew ] = MetJacobi( A,b,e )
 I = eye(size(A));
 if norm(I-A) >= 1
