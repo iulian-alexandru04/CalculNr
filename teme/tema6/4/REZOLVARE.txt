@@ -1,0 +1,4 @@
+N=100;
+A=diag(ones(1,N-1),1)+diag(ones(1,N-1),-1)+2*eye(N);
+b=(1:N)';
+[x,nr]=MetGradConj2(A,b,0.00001)
