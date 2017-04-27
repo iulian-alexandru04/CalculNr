@@ -21,10 +21,10 @@ function [ y ] = MetRot( A,e )
             Y(q,j) = -X(p,j)*s + X(q,j)*c;
             Y(j,q) = -X(p,j)*s + X(q,j)*c;
         end
-        Y(p,q) = 0;
-        Y(q,p) = 0;
         Y(p,p) = X(p,p)*(c^2)+X(p,q)*2*c*s+X(q,q)*(s^2);
         Y(q,q) = X(p,p)*(s^2)-X(p,q)*2*c*s+X(q,q)*(c^2);
+        Y(p,q) = 0;
+        Y(q,p) = 0;
         X = Y;
     end
     y = diag(X);
