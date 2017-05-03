@@ -22,4 +22,3 @@ function [ x,k] = MetJacobiDDL( A,b,e,w )
         end 
     end
 end
-
