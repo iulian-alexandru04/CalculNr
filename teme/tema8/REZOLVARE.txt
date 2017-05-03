@@ -1,0 +1,15 @@
+a=-1; b=1; n=4; e=0.00001;
+f=@(x) exp(2*x);
+x=linspace(a,b,10*(n+1));
+x(1)=x(1)+e;
+x(10*(n+1))=x(10*(n+1))-e;
+i=zeros(1,10*(n+1));
+ii=i; iii=i;
+r=f(x);
+for j=1:10*(n+1)
+	i(j)=SplineLin(f,a,b,n,x(j));
+	ii(j)=SplinePatratic(f,a,b,n,x(j));
+	iii(j)=SplineCubic(f,a,b,n,x(j));
+end
+figure
+plot(x,r,x,i,x,ii,x,iii);
